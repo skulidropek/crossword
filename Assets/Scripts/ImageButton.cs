@@ -11,11 +11,17 @@ public class ImageButton : MonoBehaviour
     private Vector3 _position;
     private bool _imageEnlarged;
     private Images _images;
+    private Money _money;
 
-    void Start()
+    private void Start()
     {
         _image = GetComponent<Image>();
         _images = FindObjectOfType<Images>();
+    }
+
+    private void Update()
+    {
+        _money = FindObjectOfType<Money>();
     }
 
 
@@ -51,10 +57,16 @@ public class ImageButton : MonoBehaviour
         }
         if (_imageStatus == ImageStatus.buylock)
         {
-            _image.sprite = _normalImage.sprite;
-     
-            _imageStatus = ImageStatus.unlock;
-            Debug.Log("Нужно купить");
+            if (_money.Moneys >= 2)
+            {
+                _image.sprite = _normalImage.sprite;
+                _imageStatus = ImageStatus.unlock;
+                _money.Moneys -= 2;
+
+                Debug.Log("Вы купили");
+            }
+            else
+                Debug.Log("У вас недостаточно денег");
         }
         else if (_imageStatus == ImageStatus.block)
             Debug.Log("Заблокировано");

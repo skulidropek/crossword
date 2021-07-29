@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad400953b60bd4f46ad225a4161e2df2, type: 3}
   m_Name: FigmaImporterSettings
   m_EditorClassIdentifier: 
-  clientCode: UB7M84mHo5Jk3ElKy5lgZ1wMW
-  state: 438554871
-  token: 28FI3eUpfMEWyfhrZIrn0866J4w7SCP1aytUWRHo
-  url: https://www.figma.com/file/l8RDV96Y2c4mOJasZn2CYC/Untitled?node-id=2%3A247
+  clientCode: mKZbVXAUhgsoCkeSIeXCUoCJK
+  state: 1362205784
+  token: HpsbFPL2j9yGVFUwsXz6QwbRX3r6H35L3n5S2xvQ
+  url: https://www.figma.com/file/VsJKJv9rRitsLJQafKU71c/Picologic-Test?node-id=36%3A396
   rendersPath: FigmaImporter/Renders
